@@ -3,11 +3,53 @@
 *{
 	padding:0;
 	margin:0;
+	border:0;
+}
+#top{
+	
 }
 #header{
+	border-radius: 20px;
+	width:10%;
+	height:100px;
+	background-color: royalblue;
+	margin: 0 auto;
+	transition: width 1.5s ease, height 1.5s ease, border-radius 1.5s ease;
+	text-align:  center;
+	overflow:hidden;
+
+}
+#header:hover{
 	width:100%;
-	height:200px;
-	background-color: linear-gradient(rgb(100,200,250), royalblue);
+	height: 493px;
+	border-radius:0;
+}
+#header h1{
+	position: relative;
+	top:15%; 
+	font-family: Arial;
+	animation: fadein 1.5s;
+}
+#header p {
+	font-family: Arial;
+	display: none;
+	z-index: 1;
+}
+#header:hover p{
+	display: block;
+
+}
+#header:hover h1{
+	animation: fadeout 1.0s;
+	opacity:0.0;
+}
+@keyframes fadeout{
+	from{opacity:1.0;}
+	to {opacity:0.0;}
+}
+@keyframes fadein{
+	from{opacity:0.0;}
+	to {opacity:1.0;}
 }
 /* CSS Document */
 
