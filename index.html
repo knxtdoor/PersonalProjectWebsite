@@ -2,22 +2,24 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Zach's Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+<title>Homepage</title>
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<div id="header">
-		<h1> This is a test page where I am testing CSS and HTML</h1>
+
+<div class="parallax">
+  <div id="group1" class="parallax_group">
+    <div class="parallax_layer parallax_layer--back aqua"> <h1 class="title">Background</h1> </div>
+   
+  </div>
+	<div class="parallax_group">
+		 <div class="parallax_layer parallax_layer--base aqua"> <h1 class="title">Foreground</h1> </div>
 	</div>
-	
-	<div class="expand" id="box1">
-		<h1> Hover </h1>
-		<p> This is some test text. It is filling up this small box which is going to expand when I scroll over it.</p>
+  <div id="group2" class="parallax_group">
+    <div class="parallax_layer parallax_layer--back blue"> <h1 class="title"> Background</h1></div>
+	<div class="parallax_layer parallax_layer--base blue"> <h1 class="title"> Foreground </h1></div>
 	</div>
-	<div class="expand" id="box2">
-	<h1> Hover</h1>
-		<p> This is some more text in another box which also expands</p>
-	</div>
+</div>
 </body>
 </html>
