@@ -6,6 +6,17 @@
 	border:0;
 	font-family:Arial, sans-serif;
 }
+body{
+	margin: 0;
+	border: 0;
+	padding:0;
+	background:#5B0094;
+}
+div{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
 .box{
 	width: 100%;
 	height: 15em;
@@ -19,28 +30,44 @@
 }
 #header{
 }
+
+footer{
+	border-top: 2px dotted blue;
+	font-family: Arial, sans-serif;
+}
+p{
+	text-align: center;
+	width: 100%;
+	font-weight: 700;
+}
 .expand{
 	border-radius: 20px;
 	width:10%;
 	height:100px;
 	color:black;
 	background-color: royalblue;
-	margin: 0 auto;
+	margin: 0;
 	transition: width 1.5s ease, height 1.5s ease, border-radius 1.5s ease, z-index .1s 1.5s linear;
 	text-align:  center;
 	overflow: hidden;
-	position: absolute;
-	float:right;
+	position: relative;
 	z-index: 0;
-
+	text-shadow: 0 0 0 #000;
+	align-self:initial;
+	display:block;
 	
 
 }
-
-
+.filler{
+	widght:100%;
+	height:1vh;
+}
+#box2{
+ background-color:#127FDF;
+}
 .expand:hover{
-	width:90%;
-	height: 493px;
+	width:50%;
+	height: 25%;
 	border-radius:0;
 	transition: width 1.5s ease, height 1.5s ease, border-radius 1.5s ease, z-index .1s linear;
 	z-index: 2;	
@@ -48,9 +75,12 @@
 
 .expand h1{
 	position: relative;
-	top:25%; 
+	top:0;
+	margin-top: 3.2vh;
 	font-family: Arial;
 	animation: fadein 1.5s .5s both;
+	font-size: 3vw;
+
 }
 .expand p {
 	font-family: Arial;
@@ -68,7 +98,12 @@
 	opacity:0.0;
 }
 
-
+.floatleft{
+	float:left;
+}
+.floatright{
+	float:right;
+}
 .nolink:link{
 	text-decoration: none;
 	color:cadetblue;
@@ -114,13 +149,17 @@
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px;
 }
-
+.boxllax{
+	perspective: 2px;
+	transform: translateZ(-1px) scale(1.6);
+	
+}
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: 100vh;
-
+  width:100%;
   /* For text formatting. */
   display: flex;
   align-items: center;
@@ -133,11 +172,11 @@
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: 100vh;
-  
+  width:100vw;
   /* For text formatting. */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: white;
   text-shadow: 0 0 5px #000;
 }
@@ -172,20 +211,20 @@
 	background:blue;
 }
 .bg1::after {
- /* background-image: url("https://static.pexels.com/photos/110854/pexels-photo-110854.jpeg");*/
-	background:red;
+  background-image: url("https://static.pexels.com/photos/110854/pexels-photo-110854.jpeg");
+	/*background:white;*/
 	
 }
 
-.bg2::after {
+.bg2::after { 	
  /* background-image: url("http://betheme.muffingroupsc.netdna-cdn.com/be/underwater/wp-content/uploads/2016/05/home_underwater_sectionbg2.jpg"); */
-	background: orange;
+	background: #8049F5;
 }
 .bg3::after{
 	background:yellow;
 }
 .bg4::after{
-	background:green;
+	background:#005984;
 }
 
 
