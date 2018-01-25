@@ -62,15 +62,31 @@ p{
 	widght:100%;
 	height:1vh;
 }
+#box1::after{
+	background-image:url("DR.Logo.jpg");
+	background-clip: content-box;
+	background-size: contain;
+  content: "";
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
+#box1:hover::after{
+	background:cornflowerblue;
+}
 #box2{
  background-color:#127FDF;
 }
 .expand:hover{
 	width:50%;
-	height: 25%;
+	height: 19%;
 	border-radius:0;
 	transition: width 1.5s ease, height 1.5s ease, border-radius 1.5s ease, z-index .1s linear;
-	z-index: 2;	
+	z-index: 0;	
 }
 
 .expand h1{
@@ -87,10 +103,12 @@ p{
 	display: none;
 	opacity: 0.0;
 	z-index: 1;
+	
 }
 .expand:hover p{
 	animation: fadein 1.0s .5s forwards;
 	display: block;
+	
 
 }
 .expand:hover h1{
@@ -166,12 +184,13 @@ p{
   justify-content: center;
   color: white;
   text-shadow: 0 0 5px #000;
+
 }
 .halfsection{
 	  /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 85vh;
   width:100vw;
   /* For text formatting. */
   display: flex;
@@ -196,7 +215,7 @@ p{
   /* Force the background image to fill the whole element. */
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
+  z-index: 5;
 	
 }
 
@@ -212,13 +231,23 @@ p{
 }
 .bg1::after {
   background-image: url("https://static.pexels.com/photos/110854/pexels-photo-110854.jpeg");
-	/*background:white;*/
+	/*background:white;
+	background: #8049F5;*/
 	
 }
 
 .bg2::after { 	
- /* background-image: url("http://betheme.muffingroupsc.netdna-cdn.com/be/underwater/wp-content/uploads/2016/05/home_underwater_sectionbg2.jpg"); */
-	background: #8049F5;
+  background-image:url("4026southpaw.jpg") ;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;   
+
+	
 }
 .bg3::after{
 	background:yellow;
