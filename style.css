@@ -84,7 +84,7 @@ p{
 }
 .expand:hover{
 	width:50%;
-	height: 19%;
+	height: 18.5%;
 	border-radius:0;
 	transition: width 1.5s ease, height 1.5s ease, border-radius 1.5s ease, z-index .1s linear;
 	z-index: 1;	
@@ -109,6 +109,7 @@ p{
 .expand:hover p{
 	animation: fadein 1.0s .5s forwards;
 	display: block;
+	
 	
 
 }
@@ -251,10 +252,19 @@ p{
 
 	
 }
-.bg3::after{
-	background:yellow;
-}
 .bg4::after{
+	background:#49004A;
+		background-color:aqua;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;   
+}
+.bg3::after{
 	background-image:url("ncczach.png") ;
 	background-color:aqua;
   content: "";
@@ -276,7 +286,7 @@ p{
 
 @keyframes fadeout{
 	from{opacity:1.0;}
-	to {opacity:0.0;}
+	to {opacity:0.0; display:none}
 }
 @keyframes fadein{
 	from{opacity:0.0;}
