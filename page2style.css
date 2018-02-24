@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+	border:0;
+	font-family:Arial, sans-serif;
+}
+
+.primary{
+	height:100vh;
+	background-image: url("thelaw2.jpg");
+	width:100vw;
+	background-clip:content-box;
+	background-size:cover;
+	overflow:hidden;
+}
+.primary h1{
+	margin:auto, auto;
+}
+.fadeaway{
+	background:#4016B7;
+	height:100%;
+	width:100%;
+	animation: fadeout 1.5s .5s both;
+	
+}
+
+@keyframes fadeout{
+	from{opacity:1.0;}
+	to {opacity:0.0; display:none}
+}
